@@ -117,32 +117,34 @@ footer {
     padding: 10px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
     h1{
-        font-size: 35px;
+        font-size: 45px;
     }
     #text{
-        font-size: 25px;
+        font-size: 35px;
     }
     #container{
         width: 90%;
     }
     #text-input, #info, #result{
-        width: 95%;
-        font-size: 25px;
+        width: 90%;
+        font-size: 35px;
     }
     #check-button{
         margin: 0 auto;
         margin-top: 5% !important;
         width: 50%;
-        font-size: 25px;
+        font-size: 35px;
     }
     #input-box{
         width: 90%;
         flex-direction: row;
-        justify-content: end;
     }
     #info{
         height: auto;
+    }
+    #info h3{
+        font-size: 45px;
     }
 }
