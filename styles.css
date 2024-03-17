@@ -148,3 +148,31 @@ footer {
         font-size: 45px;
     }
 }
+@media (max-width: 500px) {
+    h1{
+        font-size: 35px;
+    }
+    #text{
+        font-size: 25px;
+    }
+    #container{
+        width: 90%;
+    }
+    #text-input, #info, #result{
+        width: 90%;
+        font-size: 25px;
+    }
+    #check-button{
+        margin: 0 auto;
+        margin-top: 5% !important;
+        width: 50%;
+        font-size: 25px;
+    }
+    #input-box{
+        width: 90%;
+        flex-direction: row;
+    }
+    #info{
+        height: auto;
+    }
+}
