@@ -1,0 +1,148 @@
+:root {
+    --var1: #191717;
+    --var2: #d9d9d9;
+    --var3: #000;
+    --var4: #ccc8aa;
+    --var5: #7c7c7c;
+    --var6: #39e222;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--var1);
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: var(--var2);
+    text-align: center;
+    font-size: 65px;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vh;
+    margin: 0 auto !important;
+    box-sizing: border-box;
+    height: 25vh;
+    border: 2px solid var(--var2);
+    border-radius: 20px;
+}
+
+#text{
+    color: var(--var2);
+    font-size: 45px;
+    margin: 10px 0;
+}
+
+#text-input{
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    outline: none;
+    height: 5vh;
+    width: 65vh;
+    font-size: 35px;
+}
+
+#check-button{
+    height: 7vh;
+    width: 15vh;
+    font-size: 35px;
+    border-radius: 15px;
+    border: 2px solid #eee;
+    outline: none;
+    background-color: var(--var1);
+    color: var(--var2);
+}
+
+#check-button:hover{
+    background-color: var(--var4);
+    color: var(--var1);
+    border: none;
+}
+
+#result{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vh;
+    margin: 10px auto 0!important;
+    box-sizing: border-box;
+    height: 10vh;
+    border-radius: 20px;
+    font-size: 30px;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    width: 90vh;
+    margin: 10px auto 0 !important;
+    box-sizing: border-box;
+    height: 15vh;
+    background-color: var(--var4);
+    color: #191717;
+    padding: 10px 20px;
+}
+
+#info h3{
+    font-size: 35px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+@media (max-width: 500px) {
+    h1{
+        font-size: 35px;
+    }
+    #text{
+        font-size: 25px;
+    }
+    #container{
+        width: 90%;
+    }
+    #text-input, #info, #result{
+        width: 95%;
+        font-size: 25px;
+    }
+    #check-button{
+        margin: 0 auto;
+        margin-top: 5% !important;
+        width: 50%;
+        font-size: 25px;
+    }
+    #input-box{
+        width: 90%;
+        flex-direction: row;
+        justify-content: end;
+    }
+    #info{
+        height: auto;
+    }
+}
